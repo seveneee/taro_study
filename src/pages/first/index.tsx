@@ -6,6 +6,8 @@ import { observer, inject } from 'mobx-react'
 
 //导入taro
 import taro from '@tarojs/taro'
+import './index.less'
+
 
 
 @inject('store')
