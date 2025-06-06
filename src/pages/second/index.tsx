@@ -1,8 +1,14 @@
-// src/pages/home/index.tsx
 import { View, Text, Image } from '@tarojs/components'
+import Taro from '@tarojs/taro'
 import './index.less'
 
 const Home = () => {
+  const handleHomeClick = () => {
+    Taro.navigateTo({
+      url: '/pages/first/index'  // 跳转到 first 页面
+    })
+  }
+
   return (
     <View className="home-page">
       {/* 左侧导航栏 */}
@@ -11,7 +17,7 @@ const Home = () => {
           <Text className="logo">AI办公室</Text>
         </View>
         <View className="menu">
-          <View className="menu-item active">🏠 首页</View>
+          <View className="menu-item active" onClick={handleHomeClick}>🏠 首页</View>
           <View className="menu-item">📄 项目档案</View>
           <View className="menu-item">📊 任务管理</View>
           <View className="menu-item">🔍 案例检索</View>

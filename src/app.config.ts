@@ -3,7 +3,7 @@ export default defineAppConfig({
     //'pages/duanzi/index',
     //'pages/viewpage/index',
     'pages/second/index',
-    //'pages/first/index',
+    'pages/first/index',
    // 'pages/index/index'
 
 
